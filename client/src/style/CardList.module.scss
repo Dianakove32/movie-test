@@ -1,6 +1,12 @@
 .cardsContainer{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-
+    h2{
+      margin: 100px auto auto;
+      font-size: 30px;
+    }
+}
+.searchResult{
+  margin-left: 20px;
 }

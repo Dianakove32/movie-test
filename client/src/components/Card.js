@@ -1,6 +1,6 @@
 import React from 'react';
 import  style from '../style/Card.module.scss'
-import noPosterPict from '../assets/noPoster.jpg'
+import noPosterPict from '../assets/no-image.jpg'
 
 const Card = ({movie}) => {
     return (
@@ -8,7 +8,7 @@ const Card = ({movie}) => {
             <div className={style.poster}>
                 <img src={movie.Poster==='N/A' ? noPosterPict : movie.Poster} alt={''}/>
             </div>
-                <p>Name: {movie.Title}</p>
+                <p className={style.title}><b>{movie.Title}</b> </p>
                 <p>Year: {movie.Year}</p>
                 <p>imdbID: {movie.imdbID}</p>
                 <p>Type: {movie.Type}</p>

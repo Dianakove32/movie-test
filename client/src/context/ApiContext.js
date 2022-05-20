@@ -20,7 +20,7 @@ const ContextProvider = ({children}) => {
         )
 
     }, [title, page])
-     console.log(data)
+
     return(
         <ApiContext.Provider value={{data, setData,  title, setTitle, isLoading, setPage, page, setUser, user}}>
             {children}
